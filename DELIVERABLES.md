@@ -1,84 +1,97 @@
 # Project Deliverables
 
-The team is responsible for deciding the most appropriate technical implementation. Mettelo defines the required outcomes, not a step-by-step solution.
+## Delivery Principle
 
-## Required Deliverables
+The project team is responsible for choosing and defending the technical approach. The client has specified the required business outcomes rather than prescribing a step-by-step solution.
 
-### 1. Discovery & Data Assessment
+All final outputs must be traceable from this repository.
 
-A concise document covering:
+## D1 — Discovery & Data Assessment
 
-- source tables and grain;
-- entity relationships;
-- major data-quality findings;
-- important assumptions;
-- risks and limitations;
-- questions requiring business clarification.
+**Format:** Markdown or PDF  
+**Due:** End of Week 1
 
-### 2. Data Model / Analytical Layer
+Must include source-table inventory, grain, key relationships, row-count and uniqueness checks, missing-data assessment, duplicate assessment, date-range assessment, anomalies, risks, assumptions and questions requiring business clarification.
 
-A reproducible analytical layer suitable for the agreed analysis.
+**Acceptance criterion:** another analyst should be able to understand what each source table represents and where the major data risks are.
 
-This may include SQL, Python or another justified transformation approach.
+## D2 — Analytical Data Model
 
-The team must preserve raw data and document transformations.
+**Format:** SQL/Python plus model documentation  
+**Due:** Initial version by end of Week 3
 
-### 3. KPI & Metric Definition
+Must include preserved raw data, documented transformations, reusable customer/account/transaction analytical structures, documented join logic, handling of exclusions and exceptional values, and reproducible build steps.
 
-A documented set of agreed analytical measures including:
+**Acceptance criterion:** the model can be rebuilt from the raw source data without undocumented manual editing.
 
-- metric name;
-- business definition;
-- calculation logic;
-- grain;
-- exclusions;
-- limitations.
+## D3 — KPI & Metric Catalogue
 
-### 4. Analytical Investigation
+**Format:** Markdown/CSV/Excel  
+**Due:** End of Week 3
 
-Evidence-led analysis of material customer, transaction, lending and portfolio patterns.
+For each KPI include metric name, business purpose, definition, source fields, calculation logic, grain, exclusions and limitations.
 
-The purpose is to answer business questions, not simply produce charts.
+Likely metric families include customer activity, account activity, transaction value and volume, balance behaviour, lending portfolio, repayment outcome, card penetration, standing-order usage and regional distribution.
 
-### 5. Decision-Support Product
+**Acceptance criterion:** two analysts using the documented definition should arrive at the same result.
 
-A stakeholder-facing analytical product such as a BI dashboard or equivalent reporting interface.
+## D4 — Analytical Findings
 
-The product should prioritise decision usefulness, clarity and traceability.
+**Format:** Reproducible notebook/report/query outputs  
+**Due:** End of Week 4
 
-### 6. Technical Documentation
+Provide evidence-led analysis addressing the agreed business questions. Findings should distinguish observation, interpretation, uncertainty and recommendation.
 
-Documentation sufficient for another analyst to understand:
+**Acceptance criterion:** every material conclusion can be traced to data and reproducible analysis.
 
-- data sources;
-- model structure;
-- transformation logic;
-- repository organisation;
-- assumptions;
-- known limitations;
-- how outputs can be reproduced.
+## D5 — Management Dashboard / Decision-Support Product
 
-### 7. Executive Briefing
+**Format:** Power BI, Tableau, Looker Studio or another justified solution  
+**Due:** Draft by Week 5; final by Week 6
 
-A concise management-facing summary covering:
+The product should provide a clear management view of agreed areas of customer and portfolio performance. It should not become a collection of unrelated charts.
 
-- key findings;
-- business implications;
-- risks/caveats;
-- recommended actions or further investigation.
+**Acceptance criterion:** a senior stakeholder should be able to identify key performance patterns and drill into relevant areas without understanding the underlying code.
 
-### 8. Final Presentation
+## D6 — Technical Handover Pack
 
-A team presentation for Mettelo Demo Day / project review.
+**Format:** Repository documentation  
+**Due:** Week 6
 
-Every participant should be able to explain their own contribution and answer questions about the overall solution.
+Must explain source data, project structure, transformation process, model design, metric definitions, assumptions, known limitations, reproduction steps and extension guidance.
 
-## Submission
+**Acceptance criterion:** another analyst can continue the work without undocumented knowledge held by the original team.
 
-Final artefacts must be referenced from the repository. Large binary files may be stored in an approved shared location and linked from the repository.
+## D7 — Executive Briefing
 
-Email must not be used as the primary submission mechanism.
+**Format:** Maximum 2 pages or equivalent concise briefing  
+**Due:** Week 6
 
-## Acceptance
+Cover the most important findings, business implications, major data risks, recommended management actions and recommended next-phase analytical work.
 
-A project is not considered complete solely because a dashboard or notebook exists. Completion requires the agreed deliverables, sufficient documentation, visible contribution evidence and final review.
+## D8 — Final Presentation
+
+**Format:** 15–20 minute team presentation plus Q&A  
+**Due:** Mettelo Demo Day
+
+All team members should contribute. The panel may challenge definitions, assumptions, technical choices, data quality, conclusions, recommendations and limitations.
+
+## Submission Location
+
+The GitHub repository is the primary submission and evidence location.
+
+Use:
+
+- `/docs` for documentation;
+- `/sql` for SQL;
+- `/notebooks` for notebooks;
+- `/src` for reusable code;
+- `/deliverables` for final outputs or links to approved large files.
+
+Large BI files, recordings or other binaries may be stored in an approved Mettelo Google Drive folder and linked from `/deliverables`.
+
+**Do not submit the project by email.**
+
+## Completion Gate
+
+The project is complete only when all required deliverables have been submitted, repository documentation is complete, contribution evidence is visible, final outputs are reproducible, the final presentation has been delivered, and the Mettelo review panel has completed its review.
