@@ -1,51 +1,85 @@
 # Business Context
 
-## Organisation
+## Client Profile
 
-The project represents a simulated mid-sized retail banking organisation serving personal customers across multiple regions.
+**Client Name:** Confidential  
+**Sector:** Retail Banking & Financial Services  
+**Operating Model:** Multi-region retail banking  
+**Engagement Type:** Simulated Mettelo Project Studio engagement
 
-The organisation provides current-account-style transactional services and lending products. It has accumulated several years of operational data across different source systems.
+The client serves individual banking customers across multiple districts and maintains transactional accounts, payment instructions, lending products and payment cards.
 
-## Current Reporting Environment
+The organisation's identity is intentionally withheld within the project pack to reproduce the working conditions of a confidential client engagement.
 
-Reporting has historically developed within individual functions.
+## Why the Engagement Was Commissioned
 
-### Commercial & Customer
+The executive team has become increasingly concerned that different functions are presenting different versions of customer and portfolio performance.
 
-Interested in customer activity, engagement, retention and product usage.
+A recent management review highlighted three recurring problems:
 
-### Lending
+1. teams use different definitions for basic measures such as active account and active customer;
+2. lending information is reviewed separately from wider account behaviour;
+3. analysts spend significant time reconciling spreadsheet reports before meetings.
 
-Interested in loan balances, repayment behaviour, portfolio quality and exposure.
-
-### Finance
-
-Interested in balances, flows, portfolio composition and reconciled performance measures.
-
-### Operations
-
-Interested in transaction behaviour, service activity, exceptions and unusual patterns.
-
-Because each function has developed its own reporting logic, senior management cannot always reconcile figures presented across teams.
+Management does not yet want a major technology implementation. It first wants an evidence-led assessment of the available data and a prototype analytical solution showing what a governed reporting approach could look like.
 
 ## Stakeholders
 
-The project team should assume that the principal stakeholders include:
+### Director of Customer & Commercial Performance — Project Sponsor
+Needs a reliable view of customer activity, engagement patterns, regional differences and opportunities for deeper customer analysis.
 
-- Director of Customer & Commercial Performance
-- Head of Lending
-- Finance Business Partner
-- Head of Operations
-- Data & Analytics Lead
+### Head of Lending
+Needs visibility of loan portfolio composition, repayment outcomes and characteristics associated with weaker performance.
 
-Different stakeholders may have competing priorities. The team should document important assumptions and metric definitions rather than silently choosing one interpretation.
+### Head of Operations
+Needs to understand transaction volumes, account behaviour, standing orders and operational patterns that may require attention.
 
-## Analytical Environment
+### Finance Business Partner
+Needs confidence that reported measures are traceable, consistently defined and do not double-count customers, accounts or transactions.
 
-The source data is relational and contains records at different levels of granularity. Participants should expect to identify and resolve issues relating to joins, duplicate concepts, dates, transaction direction, missing values, account/customer relationships and metric definitions.
+### Data & Analytics Lead
+Needs the work to be reproducible, documented and capable of being handed over to another analyst.
 
-## Confidentiality Scenario
+## Current-State Reporting
 
-The simulated organisation name and selected contextual details are intentionally withheld. Project participants should treat the supplied materials as confidential Mettelo Project Studio materials.
+The current environment is assumed to include:
 
-This confidentiality mechanism is part of the delivery simulation and must not be represented as evidence that Mettelo has a real external banking client.
+- spreadsheet-based management reports;
+- manually reconciled figures;
+- separate functional extracts;
+- inconsistent metric definitions;
+- limited shared documentation;
+- no agreed analytical model spanning customers, accounts, transactions and loans.
+
+## Decision Context
+
+The executive team is considering whether to invest in a more formal management-information and analytics capability.
+
+The project findings will therefore be used to help answer:
+
+- whether the available data can support reliable management reporting;
+- which metrics are sufficiently robust to operationalise;
+- where data-quality remediation is required;
+- which analytical areas offer the strongest business value;
+- what additional data or system improvements should be prioritised.
+
+## Analytical Challenge
+
+The source system is relational. Different tables operate at different levels of granularity.
+
+Examples include:
+
+- one customer may be connected to an account through a disposition/permission relationship;
+- an account may have many transactions;
+- an account may have multiple standing orders;
+- card records relate to account permissions rather than directly to every transaction;
+- loans relate to accounts;
+- district information provides contextual demographic information.
+
+Participants must therefore validate relationships rather than rely on simple flat-table joins.
+
+## Confidentiality Position
+
+The client identity and selected contextual details are withheld as part of the Mettelo Project Studio simulation.
+
+Participants may describe verified work as a Mettelo Project Studio engagement, but must not claim that the confidential client is a real external Mettelo banking customer.
