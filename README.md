@@ -66,8 +66,9 @@ See [data/README.md](data/README.md) for the verified source, download instructi
 ├── src/
 ├── deliverables/
 └── submissions/
-    ├── team-01/
-    └── team-02/
+    ├── README.md
+    ├── FINAL_SUBMISSION_TEMPLATE.md
+    └── <team-created-folders>/
 ```
 
 ## Delivery Rules
