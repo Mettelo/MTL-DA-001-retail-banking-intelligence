@@ -1,14 +1,24 @@
-# Source Data — MTL-DA-001
+# Data Workspace — MTL-DA-001
 
-## Dataset Selected
+This folder contains the source-data guidance for **Retail Banking Customer & Portfolio Intelligence**.
+
+## Folder Structure
+
+```text
+data/
+├── README.md
+├── raw/
+├── reference/
+└── metadata/
+```
+
+## Dataset
 
 **PKDD'99 Financial Dataset (Berka Financial Dataset)**
 
 This project uses a real anonymised relational banking dataset originally released for the PKDD'99 Discovery Challenge.
 
-The dataset represents banking operations across multiple linked tables rather than a single classroom-style CSV.
-
-It includes approximately:
+The dataset includes approximately:
 
 - 5,369 clients;
 - 4,500 accounts;
@@ -19,69 +29,74 @@ It includes approximately:
 - cards;
 - demographic/district information.
 
-## Core Tables
+## Expected Raw Files
 
-| File | Business Meaning |
-|---|---|
-| `account.asc` | Bank account records |
-| `client.asc` | Client/customer records |
-| `disp.asc` | Relationship/permission between client and account |
-| `trans.asc` | Account transactions |
-| `order.asc` | Permanent/standing payment orders |
-| `loan.asc` | Loans associated with accounts |
-| `card.asc` | Payment-card records |
-| `district.asc` | District-level demographic/economic information |
+- `account.asc`
+- `client.asc`
+- `disp.asc`
+- `trans.asc`
+- `order.asc`
+- `loan.asc`
+- `card.asc`
+- `district.asc`
 
-## Verified Reference Source
+## Official / Reference Source
 
 CTU Prague Relational Learning Repository:
 
 https://relational.fel.cvut.cz/dataset/Financial
 
-## Download Source
-
-Public mirror of the original source files:
+## Public Mirror
 
 https://github.com/jlacko/berka-dataset
 
-Direct ZIP download:
+Direct ZIP:
 
 https://github.com/jlacko/berka-dataset/archive/refs/heads/master.zip
 
-The mirror contains the original `.asc` files and the accompanying data-description document.
+## raw/
+
+Use `data/raw/` for the original source files.
+
+Do not manually edit the raw files.
+
+## reference/
+
+Use `data/reference/` for:
+
+- original dataset documentation;
+- value/code interpretation notes;
+- approved lookup/reference material;
+- licence/source notes.
+
+## metadata/
+
+Use `data/metadata/` for:
+
+- provenance notes;
+- file inventory;
+- schema documentation;
+- data dictionary;
+- known limitations;
+- download/extraction notes.
 
 ## Project Framing
 
-Participants should not build the project around the historical public-dataset name.
+For the Mettelo engagement, the source files represent extracts supplied for analysis by the **Confidential Retail Banking Client**.
 
-For Mettelo delivery purposes, these source files represent extracts supplied by the **Confidential Retail Banking Client**.
+The original public-source provenance must still be documented internally.
 
-The source provenance remains documented internally, and participants must not imply that the historical public data came from a real current Mettelo client.
+Participants must not imply that the historical public dataset is current confidential data from a real Mettelo client.
 
-## Data Handling
+## Team Repository Rule
 
-- Do not manually edit the raw files.
-- Keep raw and transformed data separate.
-- Generate derived datasets reproducibly using SQL, Python or another documented process.
-- Avoid committing unnecessarily large generated datasets.
-- Keep code, data dictionaries, transformation logic and documentation in GitHub.
+Each team should mirror the same principles in its own repository:
 
-## Expected Data Work
+```text
+data/
+├── README.md
+├── raw/
+└── processed/
+```
 
-Participants are expected to:
-
-- investigate coded fields;
-- validate relationships;
-- profile missing and exceptional values;
-- distinguish customers from accounts;
-- understand the client-account disposition relationship;
-- document translations and derived fields;
-- preserve original values in the raw layer.
-
-## Project Rule
-
-Do not search for or reuse pre-built solutions, notebooks or dashboards based on this dataset.
-
-The objective is to reproduce realistic project delivery, not replicate an existing public analysis.
-
-Any external reference used for field interpretation must be documented.
+Raw data must remain unchanged. Processed datasets should be reproducible from code or documented transformations.
