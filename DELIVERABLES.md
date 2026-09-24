@@ -80,6 +80,15 @@ All team members should contribute. The panel may challenge definitions, assumpt
 
 The GitHub repository is the primary submission and evidence location.
 
+Each team must use its dedicated folder under:
+
+`/submissions`
+
+- Team 01: `/submissions/team-01`
+- Team 02: `/submissions/team-02`
+
+Before final submission, teams must read [submissions/README.md](submissions/README.md) and complete [submissions/FINAL_SUBMISSION_TEMPLATE.md](submissions/FINAL_SUBMISSION_TEMPLATE.md) as `FINAL_SUBMISSION.md` inside their own team folder.
+
 Use:
 
 - `/docs` for documentation;
