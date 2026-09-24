@@ -1,41 +1,61 @@
 # Mettelo Team Submissions
 
-This folder is the official submission area for **MTL-DA-001 — Retail Banking Customer & Portfolio Intelligence**.
+This folder is the official final-submission area for **MTL-DA-001 — Retail Banking Customer & Portfolio Intelligence**.
 
-Each team must submit into its own team folder.
+There is **no fixed number of teams**.
 
-## Team Folders
-
-- `team-01/`
-- `team-02/`
-
-Teams must not edit, overwrite, or delete another team's submission.
+Any approved project team can submit by creating its own team folder inside `/submissions`.
 
 ---
 
-## What Must Be Submitted
+## 1. Create Your Team Submission Folder
 
-Each team must provide the following:
+The Team Lead should create one new folder directly inside:
 
-1. `FINAL_SUBMISSION.md`
-2. Final executive briefing
-3. Final presentation
-4. Link to dashboard or BI product
-5. Link to large files stored in the approved Mettelo Google Drive folder
-6. Final technical documentation
-7. Contribution summary for each team member
+```text
+/submissions
+```
 
-Code, SQL, notebooks, and supporting documentation should remain in the team's working branch and repository folders.
+Use this naming format:
 
----
+```text
+<team-name>/
+```
 
-## Required Submission Structure
-
-Each team folder should follow this structure:
+Examples:
 
 ```text
 submissions/
-└── team-01/
+├── data-navigators/
+├── insight-forge/
+├── northstar-analytics/
+└── quant-collective/
+```
+
+### Folder-Naming Rules
+
+Your team folder name must:
+
+- be unique within this project;
+- use lowercase letters;
+- use hyphens instead of spaces;
+- avoid personal email addresses or phone numbers;
+- avoid offensive or misleading names;
+- not use `mettelo`, `admin`, `official`, or another name that could imply Mettelo ownership unless authorised.
+
+Example:
+
+`North Star Analytics` → `north-star-analytics`
+
+---
+
+## 2. Required Folder Structure
+
+Inside your team folder, create:
+
+```text
+submissions/
+└── your-team-name/
     ├── FINAL_SUBMISSION.md
     ├── executive-briefing/
     ├── presentation/
@@ -43,103 +63,191 @@ submissions/
     └── links/
 ```
 
-The same structure applies to `team-02/`.
+You may add other folders where genuinely needed, but keep the structure understandable.
 
 ---
 
-## How to Submit
+## 3. Prepare FINAL_SUBMISSION.md
 
-### Step 1 — Complete Your Team Work
+Copy:
 
-Make sure your team has completed:
+```text
+/submissions/FINAL_SUBMISSION_TEMPLATE.md
+```
 
-- data assessment;
-- analytical model;
-- KPI definitions;
-- analysis;
-- dashboard or decision-support product;
+into your team folder and rename the copy:
+
+```text
+FINAL_SUBMISSION.md
+```
+
+Complete every relevant section.
+
+This file is the official index of your final submission.
+
+It should link to:
+
+- your dashboard;
+- final executive briefing;
 - technical documentation;
-- executive briefing;
-- final presentation.
+- presentation;
+- large files stored externally;
+- key pull requests;
+- key GitHub issues;
+- contribution evidence.
 
-### Step 2 — Prepare the Final Submission File
+---
 
-Complete the template in:
+## 4. Where Different Deliverables Should Go
 
-`FINAL_SUBMISSION_TEMPLATE.md`
+### GitHub
 
-Save the completed version as:
+Use GitHub for:
 
-`FINAL_SUBMISSION.md`
-
-inside your team folder.
-
-### Step 3 — Add Final Files
-
-Place final documentation in your team submission folder.
-
-Large files such as `.pbix`, recordings, or large exports should be stored in the approved Mettelo Google Drive location and linked from `FINAL_SUBMISSION.md`.
-
-### Step 4 — Commit Your Submission
-
-Use a clear commit message such as:
-
-```text
-Submit final deliverables for MTL-DA-001 Team 01
-```
-
-### Step 5 — Open the Final Pull Request
-
-The Team Lead must open a Pull Request using the following naming format:
-
-```text
-MTL-DA-001 | Team 01 | Final Submission
-```
-
-For Team 02:
-
-```text
-MTL-DA-001 | Team 02 | Final Submission
-```
-
-The Pull Request should link to the team's `FINAL_SUBMISSION.md`.
-
-### Step 6 — Mettelo Review
-
-Mettelo will review:
-
-- completeness;
-- reproducibility;
+- SQL;
+- Python;
+- notebooks;
 - documentation;
-- evidence of contribution;
-- quality of findings;
-- presentation readiness;
-- compliance with the project brief.
+- data models;
+- KPI definitions;
+- analytical outputs that are suitable for version control;
+- final submission record;
+- contribution history.
 
-A submission is not considered complete until Mettelo confirms review completion.
+### Mettelo-approved shared storage
+
+Use the approved shared storage location for:
+
+- large `.pbix` files;
+- Tableau workbooks where required;
+- large exports;
+- video recordings;
+- files that exceed practical GitHub limits.
+
+Add the link to those files inside `FINAL_SUBMISSION.md`.
+
+### Do Not Submit By Email
+
+Email is not an accepted final-submission location.
 
 ---
 
-## Submission Rules
+## 5. Recommended GitHub Workflow
 
-- Do not submit by email.
-- Do not overwrite another team's work.
-- Do not merge directly into `main`.
-- Do not remove commit history.
-- Do not publish the private repository.
-- Do not place raw confidential or restricted data into public locations.
-- Do not claim work completed by other team members as your own.
-- All links in the final submission must be accessible to Mettelo reviewers.
+Each team should complete its work on its own working branch.
 
----
-
-## Final Submission Naming Convention
-
-Use:
+Recommended branch-name format:
 
 ```text
-MTL-DA-001_TEAM-01_FINAL_SUBMISSION
-MTL-DA-001_TEAM-02_FINAL_SUBMISSION
+team/<team-name>
 ```
 
-The Team Lead is responsible for confirming that the submission is complete before opening the final Pull Request.
+Example:
+
+```text
+team/north-star-analytics
+```
+
+The team should:
+
+1. create or work from its team branch;
+2. use issues to track meaningful work;
+3. commit work regularly;
+4. use pull requests for major internal changes where practical;
+5. prepare the final submission inside its own folder;
+6. open one final Pull Request to Mettelo for review.
+
+---
+
+## 6. Final Pull Request
+
+When your submission is complete, the Team Lead should open a Pull Request to the project review branch specified by Mettelo.
+
+Use this PR-title format:
+
+```text
+MTL-DA-001 | <Team Name> | Final Submission
+```
+
+Example:
+
+```text
+MTL-DA-001 | North Star Analytics | Final Submission
+```
+
+The Pull Request description should include:
+
+- team name;
+- Team Lead;
+- link to `FINAL_SUBMISSION.md`;
+- confirmation that all required deliverables are included;
+- confirmation that all external links are accessible to Mettelo reviewers;
+- any unresolved limitation or known issue.
+
+Do not merge the Pull Request yourself unless Mettelo explicitly asks you to.
+
+---
+
+## 7. What Mettelo Will Review
+
+Mettelo may review:
+
+- completeness of the submission;
+- reproducibility;
+- repository structure;
+- data-quality work;
+- metric definitions;
+- analytical reasoning;
+- dashboard quality;
+- technical documentation;
+- executive communication;
+- GitHub issues and pull requests;
+- contribution evidence for individual team members;
+- final presentation performance.
+
+---
+
+## 8. Individual Contribution Evidence
+
+Every participant should have visible evidence of their contribution.
+
+Evidence may include:
+
+- commits;
+- pull requests;
+- issue ownership;
+- code review;
+- analytical documentation;
+- model development;
+- dashboard development;
+- project-management artefacts;
+- presentation sections.
+
+Commit count alone does not prove contribution quality.
+
+---
+
+## 9. Submission Checklist
+
+Before opening the final Pull Request, confirm that:
+
+- [ ] your team has created a uniquely named folder under `/submissions`;
+- [ ] `FINAL_SUBMISSION.md` is complete;
+- [ ] all required deliverables are included or linked;
+- [ ] external links work for Mettelo reviewers;
+- [ ] technical work is reproducible;
+- [ ] assumptions and limitations are documented;
+- [ ] each team member's contribution is recorded;
+- [ ] no other team's folder has been modified;
+- [ ] the team has not submitted by email;
+- [ ] the Team Lead has reviewed the complete submission.
+
+---
+
+## Important
+
+Do not edit or delete another team's submission folder.
+
+Do not copy another team's solution.
+
+Teams may be working on the same client problem, but each team must produce and defend its own analytical approach.
