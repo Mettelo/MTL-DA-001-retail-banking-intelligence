@@ -1,41 +1,54 @@
-# MTL-DA-001 — Retail Banking Intelligence
+# MTL-DA-001 — Retail Banking Customer & Portfolio Intelligence
 
 **Mettelo Project Studio**  
 **Project ID:** MTL-DA-001  
+**Client:** Confidential Retail Banking Client  
+**Sector:** Retail Banking & Financial Services  
+**Engagement Type:** Simulated client engagement  
 **Status:** Pre-launch  
-**Delivery model:** Team project  
-**Recommended team size:** 5  
-**Target duration:** 6 weeks  
-**Repository visibility:** Private
+**Team Size:** 5  
+**Delivery Window:** 6 weeks  
+**Repository:** Private
 
-## Project Overview
+> **Confidentiality Notice**  
+> The client name is intentionally withheld throughout this project. The organisation described in the brief is a simulated client created for Mettelo Project Studio using real anonymised banking data. Participants must treat the project materials as confidential and must not present the simulated client as a real external Mettelo customer.
 
-MTL-DA-001 is a realistic Mettelo Project Studio engagement built around a simulated retail banking organisation.
+## Engagement Summary
 
-The project team will work with multi-table customer, account, transaction, payment and lending data to investigate commercial performance, customer behaviour, portfolio quality and operational risk. Participants are expected to work as a delivery team rather than complete an individual classroom exercise.
+The client is a mid-sized retail banking organisation with several years of customer, account, transaction, standing-order, lending, card and regional data.
 
-The repository is the primary project workspace and evidence trail.
+Senior management currently receives fragmented reporting from Commercial, Lending, Finance and Operations. Different teams use different definitions for active customers, account activity, loan performance and portfolio health. There is no single analytical view that connects customer behaviour, cash movement, product usage and lending outcomes.
 
-## Start Here
+Mettelo has formed a five-person project team to investigate the source data, establish defensible metrics, build a reproducible analytical layer and produce decision-support outputs for senior stakeholders.
 
-1. Read [PROJECT_BRIEF.md](PROJECT_BRIEF.md)
-2. Read [BUSINESS_CONTEXT.md](BUSINESS_CONTEXT.md)
-3. Review [DELIVERABLES.md](DELIVERABLES.md)
-4. Read [CONTRIBUTING.md](CONTRIBUTING.md)
-5. Read [GOVERNANCE.md](GOVERNANCE.md)
-6. Review the source-data notes in [data/README.md](data/README.md)
+This is not a dashboard-only exercise. The team is expected to work as an analytics delivery team: understand the business problem, assess the data, agree definitions, build the analytical layer, investigate material patterns, communicate risks and present recommendations.
 
-## Working Principles
+## Primary Business Questions
 
-- Use GitHub for version control and technical collaboration.
-- Use issues to track work.
-- Use branches and pull requests for material changes.
-- Document assumptions and decisions.
-- Do not overwrite raw source data.
-- Do not publish project materials outside the authorised Mettelo workspace.
-- Individual contributions must be visible through commits, issues, reviews or documented project artefacts.
+1. What does the active customer and account base look like?
+2. How do transaction behaviour and balances vary across customer groups and regions?
+3. Which accounts or customer segments show materially different patterns of activity?
+4. What does the lending portfolio look like and where are performance concerns concentrated?
+5. How do standing orders, card ownership and transaction behaviour relate to wider customer engagement?
+6. Which metrics should leadership monitor consistently going forward?
+7. What data-quality or governance issues could cause management reporting to be misleading?
 
-## Proposed Repository Structure
+## Required Reading
+
+1. [PROJECT_BRIEF.md](PROJECT_BRIEF.md)
+2. [BUSINESS_CONTEXT.md](BUSINESS_CONTEXT.md)
+3. [DELIVERABLES.md](DELIVERABLES.md)
+4. [CONTRIBUTING.md](CONTRIBUTING.md)
+5. [GOVERNANCE.md](GOVERNANCE.md)
+6. [data/README.md](data/README.md)
+
+## Source Data
+
+The project uses the PKDD'99 Financial dataset, a real anonymised relational banking dataset. Mettelo uses it as source material for the simulated confidential-client engagement.
+
+See [data/README.md](data/README.md) for the verified source, download instructions and handling rules.
+
+## Repository Structure
 
 ```text
 .
@@ -53,6 +66,11 @@ The repository is the primary project workspace and evidence trail.
 └── deliverables/
 ```
 
-## Mettelo Project Studio
+## Delivery Rules
 
-This is a structured simulated engagement. It is designed to recreate realistic organisational delivery conditions while remaining transparent that the project is not an undisclosed external client engagement.
+- GitHub is the primary technical workspace and evidence trail.
+- Meaningful work should be linked to issues, commits, pull requests or documented artefacts.
+- Raw source data must not be modified in place.
+- Important analytical decisions and assumptions must be documented.
+- Final outputs must be reproducible and understandable by another analyst.
+- Email is not the primary project submission mechanism.
