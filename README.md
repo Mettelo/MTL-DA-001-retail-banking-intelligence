@@ -41,6 +41,7 @@ This is not a dashboard-only exercise. The team is expected to work as an analyt
 4. [CONTRIBUTING.md](CONTRIBUTING.md)
 5. [GOVERNANCE.md](GOVERNANCE.md)
 6. [data/README.md](data/README.md)
+7. [submissions/README.md](submissions/README.md)
 
 ## Source Data
 
@@ -63,7 +64,10 @@ See [data/README.md](data/README.md) for the verified source, download instructi
 ├── notebooks/
 ├── sql/
 ├── src/
-└── deliverables/
+├── deliverables/
+└── submissions/
+    ├── team-01/
+    └── team-02/
 ```
 
 ## Delivery Rules
