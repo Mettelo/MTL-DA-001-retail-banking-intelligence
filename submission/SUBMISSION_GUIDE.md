@@ -38,13 +38,27 @@ Each participant should use their own GitHub account.
 
 Do not share one GitHub login across the team.
 
-## Step 4 — Add Mettelo Review Access
+## Step 4 — Grant Mettelo Access — Mandatory
 
-If your repository is private, add the **designated Mettelo reviewer GitHub account** as a collaborator.
+Every team delivery repository must include Mettelo as part of the repository review process.
 
-Mettelo will provide the exact reviewer username before final submission.
+If the repository is owned outside the Mettelo GitHub organisation, the Team Lead must invite the **designated Mettelo reviewer GitHub account** as a collaborator.
 
-The repository must remain accessible until review and verification are complete.
+If the repository is hosted inside the Mettelo GitHub organisation, the required Mettelo reviewer/team access must remain enabled.
+
+**Your project submission is not complete until Mettelo can access the repository.**
+
+Before submission, confirm that Mettelo can review:
+
+- repository files and folders;
+- commit history;
+- branches;
+- issues;
+- pull requests;
+- contribution evidence;
+- final deliverables.
+
+Mettelo access must remain active until the review and verification process is complete.
 
 ## Step 5 — Build the Required Structure
 
@@ -114,7 +128,7 @@ Confirmation that the work is the team's own, sources are acknowledged, and the 
 Before submission verify:
 
 - [ ] repository name follows the standard;
-- [ ] Mettelo reviewer has access;
+- [ ] Mettelo reviewer access has been granted and verified;
 - [ ] README is complete;
 - [ ] required structure exists;
 - [ ] data-download instructions work;
