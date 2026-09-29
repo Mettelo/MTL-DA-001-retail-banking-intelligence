@@ -161,3 +161,30 @@ Where relevant include:
 Mettelo may compare this record with commits, issues, pull requests, reviews, documentation, analytical artefacts and presentation evidence.
 
 Commit count alone is not sufficient proof of contribution.
+
+
+## Mandatory Mettelo Access
+
+Every team delivery repository **must grant Mettelo access** for review, verification and project-quality assurance.
+
+### If the repository is owned by a team member or another organisation
+
+The Team Lead must invite the **designated Mettelo reviewer GitHub account** as a collaborator.
+
+### If the repository is created inside the Mettelo GitHub organisation
+
+The required Mettelo reviewer/team access must be retained.
+
+### Submission rule
+
+A repository will **not be treated as a complete Mettelo submission until Mettelo access has been granted and verified**.
+
+The Team Lead is responsible for ensuring that:
+
+- the invitation has been sent;
+- the designated Mettelo reviewer can open the repository;
+- the reviewer can inspect code, documentation, issues, pull requests and contribution history;
+- access remains available throughout review and verification.
+
+Do not remove Mettelo access until the project review and verification process is complete.
+
