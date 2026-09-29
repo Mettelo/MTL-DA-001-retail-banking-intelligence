@@ -235,3 +235,46 @@ A repository is **not a complete Mettelo submission until access for `Olaoluwajo
 
 The Team Lead is responsible for confirming access and must keep it active until the review and verification process is complete.
 
+
+
+## Mandatory Mettelo Organisation Access
+
+Every team delivery repository must be accessible to the **Mettelo GitHub organisation** for review, verification and quality assurance.
+
+### Preferred method — create the repository inside Mettelo
+
+Where available, teams should create their delivery repository **inside the Mettelo GitHub organisation**.
+
+This is the preferred setup because Mettelo can manage organisation-level access, teams and repository permissions centrally.
+
+The repository name must follow:
+
+```text
+MTL-DA-XXX-<team-name>
+```
+
+### If your repository is created outside Mettelo
+
+GitHub does not normally allow a personal repository to invite an entire organisation as a collaborator.
+
+If your team creates the repository under a personal GitHub account or another organisation, you must follow the Mettelo access method communicated for that cohort before submission. This may require:
+
+- transferring the repository into the Mettelo organisation; or
+- granting access to the specific Mettelo reviewer account/team designated by Mettelo.
+
+### Submission rule
+
+A repository is **not a complete Mettelo submission until the Mettelo organisation has verified access**.
+
+Mettelo must be able to review:
+
+- repository files and folders;
+- commit history;
+- branches;
+- issues;
+- pull requests;
+- contribution evidence;
+- final deliverables.
+
+Access must remain active until project review and verification are complete.
+
